@@ -1,0 +1,276 @@
+html,
+body {
+  background-image: url(/images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40vw;
+}
+
+section,
+content {
+  background-color: hsl(228, 56%, 26%);
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin-left: 10vw;
+  outline: none;
+  border: none;
+}
+
+content {
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  height: 150px;
+}
+section {
+  border-radius: 10px 100px 10px 10px;
+  margin-top: 90px;
+  padding: 0;
+}
+
+icons {
+  margin-left: 10vw;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+icons img {
+  background-color: hsl(229, 57%, 11%);
+  margin-right: 15px;
+  border: 16px solid hsl(229, 57%, 11%);
+  border-radius: 15px;
+}
+
+icons img[alt*='folder'] {
+  border: 18px solid hsl(229, 57%, 11%);
+  padding-top: 1px;
+}
+
+icons img[alt*='upload'] {
+  border: 19px solid hsl(229, 57%, 11%);
+  padding-top: 1px;
+}
+
+icons img[alt*='document'] {
+  border: 17px solid hsl(229, 57%, 11%);
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+logo {
+  margin-top: 25px;
+  margin-left: 35px;
+}
+
+span {
+  font-weight: 700;
+}
+p {
+  font-weight: 400;
+  margin-top: 25px;
+  color: hsl(243, 100%, 93%);
+}
+
+.whitebox {
+  background-color: white;
+  width: 150px;
+  height: 60px;
+  margin-left: 132px;
+  color: hsl(229, 57%, 11%);
+  border-radius: 7px;
+  margin-top: -40px;
+  text-align: center;
+}
+paragraph {
+  margin-top: -15px;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 22px;
+  font-size: smaller;
+}
+
+.progress {
+  border-radius: 25px;
+  width: 250px;
+  height: 15px;
+  margin-left: 25px;
+  background-color: hsl(229, 57%, 11%);
+}
+.progress-bar {
+  background: rgb(255, 163, 153);
+  background: linear-gradient(
+    278deg,
+    rgba(255, 163, 153, 1) 0%,
+    rgba(255, 77, 151, 1) 35%
+  );
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 2px;
+}
+.dot {
+  height: 11px;
+  width: 11px;
+  background-color: white;
+  border-radius: 50%;
+  display: block;
+  margin-left: 184px;
+  margin-top: -2.4px;
+}
+text {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 55px;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+text span {
+  font-size: small;
+  color: hsl(229, 7%, 55%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(243, 100%, 93%);
+  position: fixed;
+  bottom: 0;
+  left: 21vw;
+}
+
+.attribution a {
+  color: #ccae16;
+}
+
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(/images/bg-desktop.png);
+    background-size: 100vw;
+    background-position: 0 47vh;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    width: 28vw;
+  }
+
+  content {
+    width: 50vw;
+  }
+
+  section,
+  content {
+    background-color: hsl(228, 56%, 26%);
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    outline: none;
+    border: none;
+  }
+
+  icons {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  logo {
+    margin-top: 25px;
+    margin-left: 45px;
+  }
+  icons img[alt*='document'] {
+    border: 12px solid hsl(229, 57%, 11%);
+    padding-right: 5px;
+    padding-left: 3px;
+  }
+  icons img[alt*='folder'] {
+    border: 13px solid hsl(229, 57%, 11%);
+    padding-top: 1px;
+  }
+  icons img[alt*='upload'] {
+    border: 13px solid hsl(229, 57%, 11%);
+    padding-top: 1px;
+  }
+
+  .whitebox {
+    margin-left: 52em;
+    margin-top: -2em;
+    position: absolute;
+  }
+
+  content {
+    width: 33vw;
+    margin-left: 20px;
+    margin-top: auto;
+    height: 125px;
+    text-align: inherit;
+  }
+  section {
+    width: 23vw;
+  }
+
+  .whitebox {
+    width: 149px;
+  }
+
+  .progress {
+    width: 409px;
+  }
+
+  .dot {
+    margin-left: 313px;
+  }
+
+  p {
+    margin-left: 28px;
+  }
+
+  container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vw;
+  }
+
+  .attribution {
+    left: 45vw;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid white;
+    border-left: 30px solid transparent;
+    position: absolute;
+    left: 8.5em;
+    bottom: -1em;
+  }
+}
