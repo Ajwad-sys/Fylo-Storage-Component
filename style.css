@@ -1,6 +1,6 @@
 html,
 body {
-  background-image: url(/images/bg-mobile.png);
+  background-image: url(/Fylo-Storage-Component/images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 14px;
@@ -161,7 +161,7 @@ text span {
   html,
   body {
     background-color: hsl(229, 57%, 11%);
-    background-image: url(/images/bg-desktop.png);
+    background-image: url(/Fylo-Storage-Component/images/bg-desktop.png);
     background-size: 100vw;
     background-position: 0 47vh;
     background-repeat: no-repeat;
@@ -253,7 +253,7 @@ text span {
     margin-left: 28px;
   }
 
-  container {
+  .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
